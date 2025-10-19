@@ -1,0 +1,30 @@
+name: GitHub Snake
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Atualiza a cada hora
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate GitHub Snake
+        uses: Platane/snk@master
+        with:
+          username: Fernando-Anjos
+          theme: dark
+          snake_color: 00ffcc
+          output_path: snake.gif
+
+      - name: Commit snake
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add snake.gif
+          git commit -m "Update GitHub Snake" || echo "No changes to commit"
+          git push
