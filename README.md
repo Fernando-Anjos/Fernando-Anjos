@@ -2,7 +2,8 @@
 
 ![Fernando Anjos GitHub stats](https://github-readme-stats.vercel.app/api?username=Fernando-Anjos&show_icons=true&theme=tokyonight)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Fernando-Anjos&layout=compact&theme=tokyonight)
-![GitHub Snake](https://github-readme-stats.vercel.app/api/github-snake?username=Fernando-Anjos&theme=dark&hide_border=true&snake_color=00ffcc)
+
+![GitHub Snake](./snake.gif)
 
 <!--
 **Fernando-Anjos/Fernando-Anjos** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
